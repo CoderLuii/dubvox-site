@@ -1,0 +1,79 @@
+---
+import '../styles/global.css';
+
+const title = '404 - Dubvox';
+const description = 'The page you requested could not be found.';
+const url = 'https://dubvox.coderluii.dev/404';
+const ogImage = 'https://dubvox.coderluii.dev/promo/dubvox/dubvox-og.png';
+---
+
+<html lang="en" data-product="dubvox">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0E1524" />
+  <meta name="description" content={description} />
+  <meta name="author" content="CoderLuii" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@CoderLuii" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <title>{title}</title>
+</head>
+
+<body class="min-h-screen font-sans antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-[#EA8A2E] focus:text-[#0E1524] focus:px-4 focus:py-2 focus:rounded-lg focus:text-sm focus:font-semibold">Skip to content</a>
+
+  <nav class="fixed top-0 left-0 right-0 z-50 border-b border-[#1E3A5F]/40 bg-[#050505]/80 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <a href="/" class="flex items-center gap-3 text-lg font-bold">
+        <img src="/promo/dubvox/logo.png" alt="Dubvox" width="32" height="32" class="rounded-lg" />
+        <span class="bg-gradient-to-r from-[#EA8A2E] to-[#F5B041] bg-clip-text text-transparent">Dubvox</span>
+      </a>
+      <a href="https://coderluii.dev" class="rounded-lg border border-[#1E3A5F]/60 px-3 py-1.5 text-sm text-[#CBD5E1] transition-colors hover:border-[#EA8A2E]/50 hover:text-white">Back to CoderLuii</a>
+    </div>
+  </nav>
+
+  <main id="main-content" class="relative flex min-h-screen items-center justify-center overflow-hidden px-4 pt-24 pb-16 sm:px-6">
+    <div class="gradient-mesh" aria-hidden="true"></div>
+    <section class="relative z-10 w-full max-w-2xl rounded-3xl border border-[#1E3A5F]/50 bg-[#10141D]/85 p-8 text-center shadow-2xl shadow-black/20 sm:p-12">
+      <div class="mx-auto mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl border border-[#EA8A2E]/30 bg-[#EA8A2E]/10 text-2xl font-bold text-[#EA8A2E]">
+        404
+      </div>
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.24em] text-[#EA8A2E]">Page not found</p>
+      <h1 class="mb-4 text-3xl font-bold text-white sm:text-5xl">That route doesn’t exist.</h1>
+      <p class="mx-auto mb-8 max-w-xl text-base leading-7 text-[#94A3B8] sm:text-lg">
+        The page may have moved, the link may be outdated, or the URL may be wrong.
+        Head back to the Dubvox homepage and keep exploring from there.
+      </p>
+
+      <div class="flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <a href="/" class="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-[#EA8A2E] to-[#F5B041] px-6 py-3 text-sm font-semibold text-[#0E1524] transition-transform hover:-translate-y-0.5">
+          Return to homepage
+        </a>
+        <a href="https://coderluii.dev" class="inline-flex items-center justify-center rounded-xl border border-[#1E3A5F]/60 px-6 py-3 text-sm font-semibold text-[#CBD5E1] transition-colors hover:border-[#EA8A2E]/50 hover:text-white">
+          Visit CoderLuii
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-[#1E3A5F]/40 py-8 sm:py-10">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 text-sm text-[#94A3B8] sm:flex-row sm:px-6">
+      <div class="flex items-center gap-2">
+        <img src="/promo/dubvox/logo.png" alt="Dubvox" width="20" height="20" class="rounded" />
+        <span class="bg-gradient-to-r from-[#EA8A2E] to-[#F5B041] bg-clip-text font-bold text-transparent">Dubvox</span>
+      </div>
+      <p>Built by <a href="https://github.com/coderluii" target="_blank" rel="noopener noreferrer" class="text-[#CBD5E1] transition-colors hover:text-[#EA8A2E]">CoderLuii</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -540,6 +540,20 @@ import WaitlistForm from '../components/WaitlistForm.astro';
     .dbx-flip-card:hover .dbx-flip-inner,
     .dbx-flip-card.flipped .dbx-flip-inner { transform: none; }
   }
+
+  html.landing-boot .dbx-split-left,
+  html.landing-boot .dbx-split-right,
+  html.landing-boot .dbx-hero-content,
+  html.landing-boot .dbx-bar,
+  html.landing-boot .dbx-split-arrow {
+    animation-play-state: paused;
+  }
+
+  html.landing-boot .dbx-split-left,
+  html.landing-boot .dbx-split-right,
+  html.landing-boot .dbx-hero-content {
+    opacity: 0 !important;
+  }
 </style>
 
 <script>
